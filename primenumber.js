@@ -2,8 +2,8 @@
 // A number is only divisible by 1 and itself
 //2,3,5,7,11,13,17,19,23....
 /*
-*Any EvenNumber given as input it will give output as false for finding prime number except 2, because it's evenprimnumber
-*factor=a*b
+1.Any EvenNumber given as input it will give output as false for finding prime number except 2, because it's evenprimnumber
+2.factor=a*b
 Givennumber:100
 factor of 100 => 1,2,4,5,10,20,25,100
 note:
@@ -15,11 +15,12 @@ note:
  * so n is factor n*n=givennumber then n is final factor of 100
  * means sqrt(100) =>10
  * means sqrt(givennumber) =>final factor
+ 3. in this case Math function called every looping it takes some time to give output if given number is largePrimeNumber...For every loop memoryspace alloted for Math function it increases space complexity.
 */
 //
 let count = 0;
 function isPrime(num) {
-  for (let fact = 2; fact < Math.sqrt(num); fact++) {
+  for (let fact = 2; fact*fact<=num; fact++) {
     count++;
     if (num % fact == 0) {
       return false;
@@ -29,5 +30,5 @@ function isPrime(num) {
 }
 
 console.log("Given OddNumber is prime number?: ", isPrime(103)); //true
-console.log("Number of Iteration: ", count); //Number of Iteration:  9
+console.log("Number of Iteration: ", count); //Number of Iteration: 9
 
