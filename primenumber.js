@@ -39,4 +39,5 @@ function isPrime(num) {
 
 console.log("Given OddNumber is prime number?: ", isPrime(103)); //true
 console.log("Number of Iteration: ", count); //Number of Iteration: 5
-
+//Time complexity:o(sqrt(n))or log(n)
+//Space complexity:o(n) 
