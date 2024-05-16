@@ -17,7 +17,7 @@ for(let i =0 ; i<arr.length; i++){
 }
 
 console.log(arr);
-console.log(" Second Minimum element in an array:",arr[1]);
+console.log(" Second least  element in an array:",arr[1]);
 console.log(...arr);
 //Time Complexity:O(n^2)
 //Space Complexity:O(n)
