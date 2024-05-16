@@ -18,11 +18,17 @@ note:
  3. in this case Math function called every looping it takes some time to give output if given number is largePrimeNumber...For every loop memoryspace alloted for Math function it increases space complexity.
  4.Take input as half of the given number which is same as take input as given number both result same
  This line contributed for time complexity
+ 5. To know prime concept:
+     * only evenPrimeNumber is:2 ,remaing all oddPrimeNumbers 
+     * negative number,0,1 not a prime number
+     * all evennumber not a prime number except 2
 */
 //
 let count = 0;
 function isPrime(num) {
-  for (let fact = 2; fact*fact<=num/2; fact++) {
+    if(num % 2 ==0) return false;
+    if(num<=2) return false;
+  for (let fact = 3; fact*fact<=num/2; fact++) {
     count++;
     if (num % fact == 0) {
       return false;
@@ -32,5 +38,5 @@ function isPrime(num) {
 }
 
 console.log("Given OddNumber is prime number?: ", isPrime(103)); //true
-console.log("Number of Iteration: ", count); //Number of Iteration: 6
+console.log("Number of Iteration: ", count); //Number of Iteration: 5
 
