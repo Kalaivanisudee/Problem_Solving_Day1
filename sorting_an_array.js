@@ -17,7 +17,7 @@ for(let i =0 ; i<arr.length; i++){
 }
 
 console.log(arr);
-console.log("Maximum element in an array:",arr[0]);
+console.log(" Second Maximum element in an array:",arr[1]);
 console.log(...arr);
 //Time Complexity:O(n^2)
 //Space Complexity:O(n)
