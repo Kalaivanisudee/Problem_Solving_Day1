@@ -2,6 +2,7 @@
 
 let arr = Array.from({length:10},()=>Math.floor(Math.random()*100))
 console.log(arr.length);// Output:10
+console.log(arr)
 
 for(let i =0 ; i<arr.length; i++){
     let minIndex = i;
@@ -16,6 +17,7 @@ for(let i =0 ; i<arr.length; i++){
 }
 
 console.log(arr);
+console.log("Minimum element in an array:",arr[0]);
 console.log(...arr);
 //Time Complexity:O(n^2)
 //Space Complexity:O(n)
