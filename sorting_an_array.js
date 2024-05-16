@@ -1,7 +1,7 @@
 //Sorting an array
 
-let arr = [5,1,8,4,3];
-console.log(arr.length);// Output:5
+let arr = Array.from({length:10},()=>Math.floor(Math.random()*100))
+console.log(arr.length);// Output:10
 
 for(let i =0 ; i<arr.length; i++){
     let minIndex = i;
@@ -15,8 +15,8 @@ for(let i =0 ; i<arr.length; i++){
     arr[minIndex]=temp;
 }
 
-console.log(arr);//[ 1, 3, 4, 5, 8 ]
-console.log(...arr);//1 3 4 5 8
+console.log(arr);
+console.log(...arr);
 //Time Complexity:O(n^2)
 //Space Complexity:O(n)
 
