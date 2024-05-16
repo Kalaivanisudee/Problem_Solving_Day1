@@ -16,11 +16,13 @@ note:
  * means sqrt(100) =>10
  * means sqrt(givennumber) =>final factor
  3. in this case Math function called every looping it takes some time to give output if given number is largePrimeNumber...For every loop memoryspace alloted for Math function it increases space complexity.
+ 4.Take input as half of the given number which is same as take input as given number both result same
+ This line contributed for time complexity
 */
 //
 let count = 0;
 function isPrime(num) {
-  for (let fact = 2; fact*fact<=num; fact++) {
+  for (let fact = 2; fact*fact<=num/2; fact++) {
     count++;
     if (num % fact == 0) {
       return false;
@@ -30,5 +32,5 @@ function isPrime(num) {
 }
 
 console.log("Given OddNumber is prime number?: ", isPrime(103)); //true
-console.log("Number of Iteration: ", count); //Number of Iteration: 9
+console.log("Number of Iteration: ", count); //Number of Iteration: 6
 
