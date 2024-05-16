@@ -17,6 +17,7 @@ for(let i =0 ; i<arr.length; i++){
 
 console.log(arr);//[ 1, 3, 4, 5, 8 ]
 console.log(...arr);//1 3 4 5 8
-
+//Time Complexity:O(n^2)
+//Space Complexity:O(n)
 
 
